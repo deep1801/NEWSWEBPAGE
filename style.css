@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center;
+     overflow-x: hidden;
+     width: 100vw;
+     gap: 2rem;
+ }
+ header{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     /* width: 100vw; */
+     gap: 11em;
+     border-radius: 2rem;
+     /* border: 2px solid red; */
+ }
+ .logo img{
+     width: 13rem;
+ }
+ li{
+     list-style: none;
+ }
+ nav a{
+     text-decoration: none;
+     font-size: 1.2rem;
+     color: black;
+ }
+ nav{
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+ }
+ nav a:hover{
+     color: darkgray;
+ }
+ main{
+     /* width: 100vw; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 2rem;
+ }
+ .top{
+     display: flex;
+     gap: 4rem;
+ }
+ #right-top{
+     /* border: 2px solid red; */
+     display: flex;
+     flex-direction: column;
+ }
+ .topchild1{
+     /* border: 2px solid black; */
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+     align-items: center;
+     width: 40rem;
+     /* border: 2px solid red; */
+ }
+ .topchild1 a{
+     color: black;
+     transition: 2s;
+ }
+ .topchild1 a:hover{
+     color:red
+ }
+ .topchild1 img{
+     width: 38rem;
+     height: 27rem;
+ }
+ .right-topchild1{
+     border: 2px solid red;
+     display: flex;
+     flex-direction:column;
+     /* justify-content: center; */
+     width: 10rem;
+ }
+ .right-topchild1 img{
+     width: 10rem;
+ }
+ /* LEFT CHILD TOP */
+ #left-top{
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+ }
+ .topchild2{
+     display: flex;
+     align-items: center;
+     /* border: 2px solid grey; */
+     border-radius: 0.5rem;
+     gap: 2.5rem;
+     width: 25rem;
+     height: 8rem;
+ }
+ .topchild2 img{
+     width: 12rem;
+     border-radius: 0.4rem;
+ }
+ .topchild2 a{
+     color: black;
+     text-decoration: none;
+     font-size: 1.2rem;
+     transition: 2s;
+ }
+ .topchild2 a:hover{
+     color: red;
+ }
+ /* MIDDLE */
+ #middle{
+     display: flex; 
+     gap: 2.5rem;
+ }
+ .middlechild{
+     display: flex;
+     flex-direction: column;
+     width: 15rem;
+     border: 0.5px solid black;
+     border-radius: 0.3rem;
+     gap: 0.5rem;
+ }
+ .middlechild a{
+     color: black;
+     text-decoration: none;
+     transition: 2s;
+     text-align: center;
+ }
+ .middlechild a:hover{
+     color: red;
+ }
+ #bottom{
+     padding: 2rem;
+     border: 2px solid wheat;
+     display: flex;
+     gap: 2rem;
+     background-color: wheat;
+     width: 100vw;
+     align-items: center;
+     justify-content: center;
+     border: none;
+ }
+ .bottomchild{
+     display: flex;
+     flex-direction: column;
+     width:30rem;
+     height: 20rem;
+     /* align-items: center; */
+     gap: 1rem;
+     /* align-items: center; */
+     /* justify-content: center; */
+     height: 20rem;
+ }
+ .bottomchild a{
+     color: red;
+     /* text-align: center; */
+ }
+ .bottomchild img{
+     width: 30rem;
+     height: 15rem;
+ }
+ .gallery{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 2rem;
+ }
+ #recent{
+    display: flex;
+    width: 900px;
+    overflow-x: scroll;
+    gap: 2rem;
+    scroll-behavior: smooth;
+ }
+ #recent::-webkit-scrollbar{
+     display: none;
+ }
+ .item{
+     display: flex;
+     flex-direction: column;
+     /* align-items: center; */
+     width: 30rem;
+     gap: 1rem;
+     flex: none;
+ }
+ .item img{
+     width: 30rem;
+     height: 15rem;
+     /* border-radius: 0.4rem; */
+ }
+ .item a{
+     color: red;
+     text-decoration: none;
+     font-size: 1.2rem;
+     transition: 2s;
+     font-size: 1rem;
+ }
+ footer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #100F0F;
+     color: white;
+     /* padding: 2rem;  */
+     width: 100vw;
+     gap: 2rem;
+     border: 2px solid white;
+ }
+ .topfoot{
+     display: flex;
+     gap: 5rem;
+     align-items: center;
+ }
+ .footleft{
+     /* border: 2px solid red; */
+     width: 20rem;
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+ }
+ .social{
+     display: flex;
+     gap: 2rem;
+ }
+ .social a{
+     color: wheat;
+     transition: 2s;
+ }
+ .social a:hover{
+     color: red;
+     transform:rotate(360deg);
+ }
+ .footmiddle{
+     /* border: 2px solid red; */
+     display: flex;
+     flex-direction: column;
+     width: 15rem;
+     gap: 2rem;
+ }
+ .footmiddle input{
+     width: fit-content;
+     padding-left: 2rem;
+ }
+ .footbottom{
+     display: flex;
+     gap: 20rem;
+     align-items: center;
+ }
+ .footlogo img{
+    width: 3rem;
+ }
+ .fa-hand-point-up{
+     font-size: 3rem;
+     color: red;
+ }
+ .mypro img{
+     width: 10rem;
+     border-radius: 50%;
+ }
+ .owl-carousel{
+     border: 2px solid red;
+ }
+ #hambtn{
+     display: none;
+     padding: 0.4rem;
+     border-radius: 0.4rem;
+ 
+     border: none;
+     /* border: 2px solid red; */
+     background-color: #100F0F;
+     color: rgb(16, 202, 16);
+ }
+ #closebar{
+     display: none;
+     /* border: 2px solid red; */
+     padding: 0.4rem;
+     border-radius: 0.2rem;   
+     border: none; 
+     color: rgb(16, 202, 16);
+     background-color: #100F0F;
+ }
+ /* MEDIA QUERY */
+ @media screen and (max-width: 1024px){
+     .top{
+         /* border: 2px  solid re; */
+         gap: 3rem;
+     }
+     .topchild1{
+         width: 30rem;
+         /* border: 2px solid red; */
+     }
+     .topchild1 img{
+         width: 29.5rem;
+         height: 30rem;
+     }
+     #left-top{
+         /* border: 2px solid green; */
+         gap: 1rem;
+     }
+     .topchild2{
+         /* border: 2px solid red; */
+         width: 25rem;
+         height: 10rem;
+     }
+     .topchild2 a{
+         font-size: 1rem;
+     }
+     #middle{
+         gap: 2rem;
+     }
+     .middlechild{
+         width: 13rem;
+     }
+     .bottomchild{
+         width: 22rem;
+     }
+     .bottomchild img{
+         width: 21.5rem;
+     }
+     #recent{
+         gap: 0.5rem;
+     }
+     .item{
+         width: 21rem;
+     }
+     .item img{
+         width: 20rem;
+     }
+     .topfoot{
+         gap: 2rem;
+     }
+     .footbottom{
+         gap: 2.5rem;
+     }
+ }
+ @media screen and (max-width: 990px){
+     header{
+         gap: 11rem;
+         /* border: 2px solid red; */
+     }
+     .logo img{
+         width: 5rem;
+     }
+     nav{
+         gap: 0.5rem;
+         /* border: 2px solid red; */
+     }
+     .top{
+         /* border: 2px solid greenyellow; */
+         flex-direction: column;
+         align-items: normal;
+     }
+     .topchild1{
+         width: 45rem;
+     }
+     .topchild1 img{
+         width: 44.5rem;
+     }
+     .topchild2{
+         width: 40rem;
+         height: 7rem;
+         align-items: center;
+         border: none;
+     }
+     .middlechild{
+         /* flex: wrap; */
+         width: 11rem;
+     }
+     .item{
+         width: 20rem;
+         height: 15rem;
+         gap: 0.5rem;
+     }
+     #recent{
+         gap: 0.5rem;
+         /* width: 50rem; */
+     }
+     .item img{
+         width: 19.5rem;
+         height: 10rem;
+     }
+     .topfoot{
+         gap: 1rem;
+     }
+     .footleft{
+          width: 15rem;
+     }
+ }
+ @media screen and (max-width: 768px){
+     .logo img{
+         width: 7rem;
+     }
+     #hambtn{
+         display: block;
+     }
+     nav{
+         background-color: black;
+         display: none;
+         position: absolute;
+         top: 4.5rem;
+         right: 1.5rem;
+         height: 15rem;
+         flex-direction: column;
+         justify-content: center;
+         width: 12rem;
+         transition: 2s;
+         border-radius: 0.5rem;
+     }
+     nav li a{
+         color: white;
+     }
+     nav li a:hover{
+         color: red;
+     }
+     .top{
+         justify-content: center;
+         align-items: center;
+     }
+     .topchild1{
+        width: 24rem;
+        align-items: center;
+     }
+     .topchild1 a{
+         text-align: center;
+     }
+    .topchild1 img{
+         width: 23.5rem;
+         height: 20rem;
+    }
+    .topchild2{
+       flex-direction: column;
+       width: 24rem;
+       height: 15rem;
+       gap: 0.3rem;
+       align-items: normal;
+    }
+    .topchild2 img{
+     width: 24rem;
+    }
+    #middle{
+     flex-direction: column;
+    }
+    .middlechild{
+     width: 24em;
+     gap: 1rem;
+    }
+    .middlechild  img{
+     width: 23.5rem;
+    }
+    #bottom{
+      width: 30rem;
+      flex-direction: column;
+      /* border: 2px solid red; */
+      gap: 0.5rem;
+    }
+    .bottomchild{
+     width: 24rem;
+     height: 13rem;
+     /* flex-direction: column; */
+     /* border: 2px solid rebeccapurple; */
+    }
+    .bottomchild img{
+     width: 24rem;
+     height: 10rem;
+    }
+    #recent{
+     /* border: 2px solid red; */
+     width: 18rem;
+     gap: 2rem;
+     /* flex-direction: column; */
+    }
+    .item{
+     width: 12rem;
+     /* border: 2px solid red; */
+    }
+    .item img{
+     width: 11rem;
+    }
+    .topfoot{
+     flex-direction: column;
+     /* border: 2px solid red; */
+    }
+    .topfoot img{
+     width: 10rem;
+    }
+    .footleft{
+     width: 22rem;
+     align-items: center;
+    }
+    .footbottom{
+     width: 22rem;
+    }
+    .footmiddle{
+     width: 22rem;
+     /* border: 2px solid rebeccapurple; */
+    }
+    .footmiddle input{
+     padding: 0.1rem 0.1rem;
+     width: fit-content;
+    }
+ } 
+ @media screen and (max-width: 425px){
+     header{
+         /* border: 2px solid red; */
+         gap: 4rem;
+     }
+     .topchild1{
+         /* border: 2px solid green; */
+         width: 20rem;
+     }
+     .topchild1 img{
+         width: 19rem;
+     }
+     .topchild2{
+         /* border: 2px solid green; */
+         width: 19rem;
+     }
+     .topchild2 img{
+         width: 18rem;
+     }
+     .middlechild{
+         /* border: 2px solid green; */
+         width: 18em;
+         gap: 0rem;
+     }
+     .middlechild img{
+         width: 15rem;
+     }
+    .bottomchild{
+        /* border: 2px solid green; */
+        width: 20rem;
+    }
+    .bottomchild img{
+     width: 19rem;
+    }
+    #recent{
+     /* border: 2px solid black; */
+     width: 13rem;
+    }
+    .item{
+     /* border: 2px solid red; */
+     width: 10rem;
+    }
+    .item img{
+     width: 9.5rem;
+    }
+    .footleft{
+     width: 19rem; 
+    }
+    .footmiddle{
+     width: 19rem;
+     /* border: 2px solid red; */
+    }
+    .footbottom{
+     /* border: 2px solid goldenrod; */
+     width: 19rem;
+    }
+ }
